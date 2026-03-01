@@ -31,12 +31,21 @@ Selected Publications
 
 <div style="display: flex; align-items: center; margin-top: 20px;">
   <img src="assets/images/gero.jpg" alt="Paper Image" style="width: 300px; height: auto; margin-right: 15px;">
+  <div style="text-align: justify;">
     <h3><a href="https://arxiv.org/pdf/2601.11475">Generative Scenario Rollouts for End-to-End Autonomous Driving</a></h3>
-    <p>A brief description of the paper goes here. You can add more details as needed.</p>
+    <p>What if your autonomous agent had an "internal theater" to rehearse the future? 
+    We introduce GeRo: a VLA model augmented with a latent world model for autonomous driving. <br>
+    Core Idea: World Model  🤝 VLA <br> 
+    The formula: 👁️ + 📝 →   N x (🧠 +🔮 → 🎮)
+    <!-- Key Points: <br>
+    🔑 Future world states are treated as tokens — letting the LLM imagine before it drives. <br>
+    📊 +15.7 Driving Score | +26.2 Success Rate on Bench2Drive. <br>
+    🚀 Strong gains in long-tail, zero-shot scenarios. <br> -->
+    </p>
   </div>
 </div>
 
-<div style="margin-top: 40px;"></div>
+<div style="margin-top: 20px;"></div>
 
 <div style="display: flex; align-items: center; margin-top: 20px;">
   <img src="assets/images/AdvAttack.png" alt="Paper Image" style="width: 300px; height: auto; margin-right: 15px;">
