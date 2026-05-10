@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meysam Sadeghi's Homepage</title>
+  <meta name="description" content="Meysam Sadeghi's academic portfolio">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-title">Meysam Sadeghi's Homepage</a>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="site-body">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="author-profile">
+        <div class="author-avatar">
+          <img src="images/profile.png" alt="Meysam Sadeghi">
+        </div>
+        <div class="author-info">
+          <h3 class="author-name">Meysam Sadeghi</h3>
+          <p class="author-bio">Senior Staff Eng. &amp; Tech Lead @ Qualcomm. Ph.D. in EE.</p>
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="mailto:m.sadeghee@gmail.com">
+              <i class="fas fa-fw fa-envelope" aria-hidden="true"></i> m.sadeghee@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?user=PtX1_qoAAAAJ&hl=en" target="_blank" rel="noopener">
+              <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/meysamsadeghi" target="_blank" rel="noopener">
+              <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/meysam-sadeghi-67012754" target="_blank" rel="noopener">
+              <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/MSadeghee" target="_blank" rel="noopener">
+              <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> Twitter
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <article>
+
+        <!-- Bio -->
+        <p>
+          I am a senior staff engineer at <a href="https://www.qualcomm.com">Qualcomm</a> working on physical AI and
+          autonomous driving. My research interests lie at the intersection of physical AI and generative AI.
+          Specifically I am interested in multimodal large language models, world models, and their application for
+          end-to-end autonomous driving.
+        </p>
+        <p>
+          Prior to joining Qualcomm, I did my PhD in Electrical Engineering at
+          <a href="https://www.sutd.edu.sg">SUTD</a> under supervision of
+          <a href="https://scholar.google.com/citations?user=7VLbLUMAAAAJ&hl=en">Chau Yuen</a> where I received the
+          <strong>best PhD dissertation award</strong> for my PhD thesis. I also spent a year at
+          <a href="https://liu.se/en">Linköping University</a> as a post doc working with
+          <a href="https://scholar.google.com/citations?user=79Lry6oAAAAJ&hl=sv">Erik Larsson</a>.
+        </p>
+
+        <!-- Awards -->
+        <div class="spacer"></div>
+        <h2>Selected Awards and Grants</h2>
+        <ul>
+          <li>Qualcomm's IP Achievement Award, 2025 (extremely competitive).</li>
+          <li>Best PhD Thesis Award from Singapore University of Technology and Design, 2019.</li>
+          <li>FIRST Industry Workshop Outstanding Graduate Research Award, 2017.</li>
+          <li>MediaTek Graduate Research Competition Award, 2017.</li>
+          <li>Merlion PhD Award, 2014.</li>
+          <li>President Graduate Fellowship from Singapore University of Technology and Design, 2013.</li>
+          <li>Singapore Graduate Fellowship Award, 2013.</li>
+        </ul>
+
+        <!-- Selected Publications -->
+        <div class="spacer"></div>
+        <h2>Selected Publications</h2>
+
+        <div class="pub-card">
+          <div class="pub-card__image">
+            <img src="images/gero.jpg" alt="Generative Scenario Rollouts paper thumbnail">
+          </div>
+          <div class="pub-card__body">
+            <h3>
+              <a href="https://arxiv.org/pdf/2601.11475" target="_blank" rel="noopener">
+                Generative Scenario Rollouts for End-to-End Autonomous Driving
+              </a>
+            </h3>
+            <p>
+              What if your autonomous agent had an "internal theater" to rehearse the future?
+              We introduce GeRo: a VLA model augmented with a latent world model for autonomous driving.<br>
+              Core Idea: World Model 🤝 VLA<br>
+              The formula: 👁️ + 📝 → N × (🧠 + 🔮 → 🎮)
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <div class="pub-card__image">
+            <img src="images/AdvAttack.png" alt="Adversarial Attacks on Radio Signal Classification paper thumbnail">
+          </div>
+          <div class="pub-card__body">
+            <h3>
+              <a href="https://arxiv.org/pdf/1808.07713" target="_blank" rel="noopener">
+                Adversarial Attacks on Deep-Learning Based Radio Signal Classification
+              </a>
+            </h3>
+            <p>
+              As the pioneering work that introduced adversarial attacks to the wireless physical layer, this research
+              exposes a critical vulnerability in DL-based systems. We demonstrate that nearly invisible adversarial
+              perturbations can systematically trick modulation classifiers, outperforming traditional jamming
+              techniques and fundamentally challenging the security of AI-driven communications.
+            </p>
+          </div>
+        </div>
+
+      </article>
+    </main>
+
+  </div><!-- /.site-body -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Meysam Sadeghi &mdash; Powered by plain HTML &amp; CSS</p>
+  </footer>
+
+</body>
+</html>
