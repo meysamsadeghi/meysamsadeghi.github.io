@@ -15,6 +15,12 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a href="index.html" class="site-title">Meysam Sadeghi's Homepage</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html" class="is-current">CV</a>
+        <a href="misc.html">Misc</a>
+      </nav>
     </div>
   </header>
 
@@ -65,96 +71,143 @@
     <main class="main-content">
       <h1 class="page-title">CV</h1>
 
+      <!-- Summary -->
+      <section class="cv-section">
+        <h2>Summary</h2>
+        <p>
+          Autonomous-driving perception and end-to-end driving engineer working camera-based deep-learning
+          perception since 2019, progressing from Perception Engineer to Senior Staff Engineer &amp; Tech Lead.
+          Hands-on across the full perception stack &mdash; 3D object detection, environment modeling, and
+          online HD-map construction &mdash; with deep expertise in BEV architectures and Transformers, now
+          leading end-to-end (vision-language-action) autonomous driving. PhD in Electrical Engineering
+          (Best Dissertation Award).
+        </p>
+      </section>
+
+      <!-- Experience -->
+      <section class="cv-section">
+        <h2>Experience</h2>
+
+        <div class="cv-entry">
+          <strong>Senior Staff Engineer &amp; Tech Lead &mdash; Autonomous Driving</strong>
+          <span class="cv-meta">Qualcomm &middot; Apr 2022 &ndash; Present</span>
+          <p>Progressed Senior Engineer &rarr; Staff Engineer &rarr; Senior Staff Engineer (Jan 2026).</p>
+          <ul>
+            <li>Developed camera-based 3D object detection across the full set of road agents &mdash; vehicles,
+              vulnerable road users (pedestrians and two-wheelers), and traffic elements (signs and lights).</li>
+            <li>Built static-world perception and environment modeling &mdash; lane and road detection,
+              drivable-space estimation, road-boundary detection, and online HD-map construction &mdash; to
+              enable driving without reliance on HD maps, generalizing across diverse ODDs from complex
+              intersections to rural roads and multi-lane highways.</li>
+            <li>Deep expertise across BEV (bird's-eye-view) perception paradigms &mdash; implicit, explicit, and
+              geometric BEV &mdash; and Transformer-based detection, evolved across multiple model generations.</li>
+            <li>Tech lead for end-to-end autonomous driving, directing vision-action (VA) and
+              vision-language-action (VLA) models that map raw camera input to driving behavior.</li>
+            <li>Core contributor to <strong>GeRo</strong> and <strong>MAPLE</strong> &mdash; latent
+              world-model&ndash;augmented VLA models that rehearse future driving scenarios to improve
+              robustness of end-to-end planning under rare and extreme cases.</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <strong>Perception Engineer &rarr; Senior Perception Engineer</strong>
+          <span class="cv-meta">Veoneer, Sweden &middot; Feb 2019 &ndash; Mar 2022</span>
+          <ul>
+            <li>Developed camera-based deep-learning object detection for autonomous-driving vehicles, meeting
+              automotive robustness and real-time constraints.</li>
+            <li>Delivered detection models that fed the perception stack later carried into Qualcomm's
+              autonomous-driving program.</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <strong>Postdoctoral Research Fellow</strong>
+          <span class="cv-meta">Link&ouml;ping University, Sweden &middot; Mar 2018 &ndash; Feb 2019</span>
+          <ul>
+            <li>Researched security and robustness of deep learning with Prof. Erik G. Larsson; authored the
+              pioneering work on adversarial attacks against DL-based signal classification.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Selected Publications -->
+      <section class="cv-section">
+        <h2>Selected Publications</h2>
+        <p class="cv-meta">Name in <strong>bold</strong>. Full list on
+          <a href="https://scholar.google.com/citations?user=PtX1_qoAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+        <ul>
+          <li>
+            <strong>M. Sadeghi</strong> et al., &ldquo;MAPLE: Latent Multi-Agent Play for End-to-End Autonomous
+            Driving,&rdquo; <em>arXiv preprint</em>, 2026.
+            <a href="https://arxiv.org/pdf/2605.14201" target="_blank" rel="noopener">[paper]</a>
+          </li>
+          <li>
+            <strong>M. Sadeghi</strong> et al., &ldquo;Generative Scenario Rollouts for End-to-End Autonomous
+            Driving (GeRo),&rdquo; <em>arXiv preprint</em>, 2026.
+            <a href="https://arxiv.org/pdf/2601.11475" target="_blank" rel="noopener">[paper]</a>
+          </li>
+          <li>
+            <strong>M. Sadeghi</strong> and E. G. Larsson, &ldquo;Adversarial Attacks on Deep-Learning Based
+            Radio Signal Classification,&rdquo; <em>IEEE Wireless Communications Letters</em>, 2018.
+            <a href="https://arxiv.org/pdf/1808.07713" target="_blank" rel="noopener">[paper]</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Awards -->
+      <section class="cv-section">
+        <h2>Awards &amp; Honors</h2>
+        <ul>
+          <li><strong>Qualcomm IP Achievement Award</strong>, 2025 &mdash; awarded to ~50 of ~50,000 employees
+            (top ~0.1%) for exceptional quality and impact of ideas and IP.</li>
+          <li><strong>Best PhD Dissertation Award</strong>, Singapore University of Technology and Design (SUTD), 2019.</li>
+          <li>FIRST Industry Workshop Outstanding Graduate Research Award, 2017; MediaTek Graduate Research
+            Competition Award, 2017.</li>
+          <li>Merlion PhD Award, 2014; SUTD President's Graduate Fellowship, 2013; Singapore Graduate
+            Fellowship, 2013.</li>
+        </ul>
+      </section>
+
+      <!-- Technical Skills -->
+      <section class="cv-section">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Languages:</strong> Python, C++, MATLAB; HTML, CSS, JavaScript.</li>
+          <li><strong>Deep learning:</strong> PyTorch, TensorFlow/Keras; Transformers, BEV perception, world
+            models, VLA / multimodal LLMs, generative models.</li>
+          <li><strong>Autonomous driving:</strong> online mapping, lane-graph construction, road &amp; lane
+            detection, object detection, environment modeling, end-to-end driving, data-driven development.</li>
+          <li><strong>Methods &amp; tools:</strong> computer vision, optimization, adversarial robustness, Git, LaTeX.</li>
+        </ul>
+      </section>
+
       <!-- Education -->
       <section class="cv-section">
         <h2>Education</h2>
         <div class="cv-entry">
-          <strong>Ph.D in Version Control Theory</strong>
-          <span class="cv-meta">GitHub University, 2018</span>
+          <strong>PhD, Electrical Engineering</strong>
+          <span class="cv-meta">Singapore University of Technology and Design (SUTD) &middot; 2013 &ndash; 2018</span>
+          <p>Best PhD Dissertation Award. Advisor: Assoc. Prof. Chau Yuen.</p>
         </div>
         <div class="cv-entry">
-          <strong>M.S. in Jekyll</strong>
-          <span class="cv-meta">GitHub University, 2014</span>
+          <strong>MSc, Electrical Engineering</strong>
+          <span class="cv-meta">K. N. Toosi University of Technology, Tehran &middot; 2009 &ndash; 2011</span>
         </div>
         <div class="cv-entry">
-          <strong>B.S. in GitHub</strong>
-          <span class="cv-meta">GitHub University, 2012</span>
+          <strong>BSc, Electrical Engineering</strong>
+          <span class="cv-meta">Shiraz University of Technology, Shiraz &middot; 2004 &ndash; 2009</span>
         </div>
       </section>
 
-      <!-- Work Experience -->
+      <!-- Professional Service -->
       <section class="cv-section">
-        <h2>Work Experience</h2>
-        <div class="cv-entry">
-          <strong>Academic Pages Collaborator</strong>
-          <span class="cv-meta">Spring 2024 &mdash; GitHub University</span>
-          <p>Duties: Updates and improvements to template<br>Supervisor: The Users</p>
-        </div>
-        <div class="cv-entry">
-          <strong>Research Assistant</strong>
-          <span class="cv-meta">Fall 2015 &mdash; GitHub University</span>
-          <p>Duties: Merging pull requests<br>Supervisor: Professor Hub</p>
-        </div>
-        <div class="cv-entry">
-          <strong>Research Assistant</strong>
-          <span class="cv-meta">Summer 2015 &mdash; GitHub University</span>
-          <p>Duties: Tagging issues<br>Supervisor: Professor Git</p>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section class="cv-section">
-        <h2>Skills</h2>
+        <h2>Professional Service</h2>
         <ul>
-          <li>Skill 1</li>
-          <li>Skill 2
-            <ul>
-              <li>Sub-skill 2.1</li>
-              <li>Sub-skill 2.2</li>
-              <li>Sub-skill 2.3</li>
-            </ul>
-          </li>
-          <li>Skill 3</li>
-        </ul>
-      </section>
-
-      <!-- Publications -->
-      <section class="cv-section">
-        <h2>Publications</h2>
-        <ul>
-          <li>Your Name, You. (2015). "Paper Title Number 3." <em>Journal 1</em>. 1(3).</li>
-          <li>Your Name, You. (2010). "Paper Title Number 2." <em>Journal 1</em>. 1(2).</li>
-          <li>Your Name, You. (2009). "Paper Title Number 1." <em>Journal 1</em>. 1(1).</li>
-          <li>Your Name, You. (2024). "Paper Title Number 4." <em>GitHub Journal of Bugs</em>. 1(3).</li>
-          <li>Your Name, You. (2024). "Paper Title Number 5." <em>GitHub Journal of Bugs</em>. 1(3).</li>
-        </ul>
-      </section>
-
-      <!-- Talks -->
-      <section class="cv-section">
-        <h2>Talks</h2>
-        <ul>
-          <li>Conference Proceeding talk 3 on Relevant Topic in Your Field. Testing Institute of America 2014 Annual Conference, Los Angeles, CA, USA.</li>
-          <li>Talk 2 on Relevant Topic in Your Field. London School of Testing, London, UK.</li>
-          <li>Tutorial 1 on Relevant Topic in Your Field. UC-Berkeley Institute for Testing Science, Berkeley, CA, USA.</li>
-          <li>Talk 1 on Relevant Topic in Your Field. UC San Francisco, Department of Testing, San Francisco, CA, USA.</li>
-        </ul>
-      </section>
-
-      <!-- Teaching -->
-      <section class="cv-section">
-        <h2>Teaching</h2>
-        <ul>
-          <li>Teaching experience 2, Workshop, University 1, 2015.</li>
-          <li>Teaching experience 1, Undergraduate course, University 1, 2014.</li>
-        </ul>
-      </section>
-
-      <!-- Service -->
-      <section class="cv-section">
-        <h2>Service and Leadership</h2>
-        <ul>
-          <li>Currently signed in to 43 different Slack teams</li>
+          <li><strong>Reviewer:</strong> IEEE Transactions on Wireless Communications, Signal Processing,
+            Communications, and Vehicular Technology; IEEE Signal Processing / Communications / Wireless
+            Communications Letters.</li>
+          <li><strong>Technical Program Committee:</strong> IEEE ICCS 2018; IEEE VTS APWCS 2017&ndash;2018.
+            Former officer, IEEE Emerging Technology Initiative on Machine Learning for Communications.</li>
         </ul>
       </section>
 
