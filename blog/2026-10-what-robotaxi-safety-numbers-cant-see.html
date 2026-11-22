@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Robotaxi Safety Numbers Can't See — Meysam Sadeghi's Homepage</title>
+  <meta name="description" content="Robotaxi crash rates keep falling. They miss gridlock and fleet-wide mistakes, and both grow as robotaxis take over more of the road.">
+  <link rel="icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../index.html" class="site-title">Meysam Sadeghi's Homepage</a>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html" class="is-current">Blog</a>
+        <a href="../cv.html">CV</a>
+        <a href="../misc.html">Misc</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="site-body">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="author-profile">
+        <div class="author-avatar">
+          <img src="../images/personal_image.jpeg" alt="Meysam Sadeghi">
+        </div>
+        <div class="author-info">
+          <h3 class="author-name">Meysam Sadeghi</h3>
+          <p class="author-bio">Senior Staff Eng. &amp; Tech Lead @ Qualcomm. Ph.D. in EE.</p>
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="mailto:m.sadeghee@gmail.com">
+              <i class="fas fa-fw fa-envelope" aria-hidden="true"></i> m.sadeghee@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?user=PtX1_qoAAAAJ&hl=en" target="_blank" rel="noopener">
+              <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/meysamsadeghi" target="_blank" rel="noopener">
+              <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/meysam-sadeghi-67012754" target="_blank" rel="noopener">
+              <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/MSadeghee" target="_blank" rel="noopener">
+              <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> Twitter
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <a href="../blog.html" class="post-back">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i> All posts
+      </a>
+
+      <article class="post-body">
+
+        <header>
+          <h1 class="page-title">What Robotaxi Safety Numbers Can't See</h1>
+          <p class="post-dek">Robotaxi crash rates keep falling. They miss gridlock and fleet-wide mistakes, and both grow as robotaxis take over more of the road.</p>
+          <p class="post-byline">October 2026 &middot; 4 min read</p>
+          <p class="post-disclaimer"><b>Disclaimer</b>This is a personal take and impression, and may not fully reflect reality. All opinions are my own and do not represent those of my employer.</p>
+        </header>
+
+        <figure class="post-hero">
+          <img src="../images/blog/av_meet_av.jpeg" alt="Illustration of four white robotaxis stuck facing each other in a city intersection at dusk under dark traffic lights, with a long line of traffic backed up behind them and a human driver leaning out of a car to look at the gridlock">
+          <figcaption>AI-generated illustration.</figcaption>
+        </figure>
+
+        <p>Waymo, Tesla, and others publish safety numbers that keep improving: fewer crashes per mile, fewer injuries per mile,
+           and fewer insurance claims. Many people take these numbers as strong evidence that robotaxis are ready to scale.</p>
+
+        <p>I think the numbers are valid, but they do not show the whole picture. 
+          A crash rate counts crashes and nothing else. It does not count how often a car freezes at an intersection, 
+          how often a street is blocked, or how often a fleet makes the same mistake on the same day. Driving involves much more than collisions, 
+          including social norms that traditional safety metrics do not capture.</p>
+
+        <p> Two features of the current picture hide these costs, and both will grow as robotaxis take a larger share of traffic. 
+          The first is <strong>missing slack</strong>, and the second is <strong>correlated mistakes</strong>. Let's discuss these two in more detail.</p>
+
+        <h2>1. Missing Slack</h2>
+
+        <p>Human drivers quietly absorb a robotaxi's hesitation. They wait behind it, wave it through, and drive around it 
+          when it stops somewhere odd. At a four-way stop, one of them just goes. This is what I call <em>human slack</em>.
+          It costs a few seconds and almost never ends in a crash, so it never shows up in crash statistics.</p>
+
+        <p>Take the humans away and the slack disappears. In August 2024, Waymos in a San Francisco parking 
+          lot <a href="https://cbsnews.com/news/waymos-driverless-cars-honking-san-francisco" target="_blank" rel="noopener">honked at each other through the night</a>. 
+          In another incident, when a power cut darkened traffic lights across a third of San Francisco in December 2025, 
+          <a href="https://waymo.com/blog/2025/12/autonomously-navigating-the-real-world/" target="_blank" rel="noopener">Waymo says</a> its cars crossed more than 7,000 dark signals, 
+          yet <a href="https://www.electrive.com/2025/12/22/san-francisco-power-cut-disrupts-waymo-fleet" target="_blank" rel="noopener">five of them ended up blocking each 
+          other at one junction</a> and the fleet was pulled off the road for the day. In 2022, a group of Cruise robotaxis 
+          <a href="https://techcrunch.com/2022/06/30/cruise-robotaxis-blocked-traffic-for-hours-on-this-san-francisco-street/" target="_blank" rel="noopener">stalled together 
+            and blocked a street for hours</a>. There were no crashes in any of these, only gridlock, and mostly between the robots themselves.</p>
+
+        <p>Humans break these ties in several ways at once. They are different from each other, so one is usually a bit more assertive or a bit quicker. 
+          They can signal, so a wave or a moment of eye contact settles who goes. And they can reason through a situation they have never seen before, instead of falling back on a fixed rule.
+          Two copies of the same software have little of this. They see nearly the same situation, apply the same rule, and wait. Then they do it again.</p>
+
+        <h2>2. Correlated Mistakes</h2>
+
+        <p>In December 2023, a Waymo in Phoenix hit a pickup truck that was being towed backwards across a lane. 
+          Minutes later, <a href="https://www.engadget.com/waymo-issued-a-recall-after-two-robotaxis-crashed-into-the-same-pickup-truck-055708611.html" target="_blank" rel="noopener">a 
+            second Waymo hit the same truck</a>. Same software, same wrong prediction, two crashes. 
+            In late 2025, the Austin school district documented <a href="https://www.npr.org/2025/12/06/nx-s1-5635614/waymo-school-buses-recall" target="_blank" rel="noopener">19 cases of 
+              Waymos passing stopped school buses</a>.</p>
+
+        <p>Human mistakes are mostly independent. Say a rare situation fools 1% of drivers, and 1,000 drivers meet it on a given day. You get about 10 mistakes, give or take 3, 
+          and 50 is practically impossible. A thousand robotaxis on the same software can also average 10 mistakes, but no actual day looks like that. 
+          Either the software handles the situation and nobody fails, or it doesn't and <strong>every car that meets it fails</strong>. A per-mile crash rate looks identical in both worlds.</p>
+
+        <p>The flip side is that a fleet can be fixed at once. Waymo started rolling out a fix nine days after the towed-truck crashes, which no one can do for human drivers. 
+          The risk lives in the window before the fix lands, and the bigger the fleet, the more cars pass through that window.</p>
+
+        <h2>One Root Cause</h2>
+
+        <p>Both problems have the same root. <strong>Robotaxis are far more similar to each other than human drivers are.</strong> 
+          In today's traffic this similarity is hidden, because humans break the ties and a shared gap is hit a handful of times rather than thousands. 
+          As the share of robotaxis grows, more ties are between two robotaxis and more cars share each gap. A per-vehicle crash rate measured in human traffic sees neither effect.</p>
+
+        <h2>The Obvious Objections</h2>
+
+        <p>A company can coordinate its own fleet centrally. Policies can be trained against copies of themselves, as <a href="https://arxiv.org/abs/2502.03349" target="_blank" rel="noopener">Gigaflow</a> did in simulation.
+          Ties can be broken with a little randomness in how long a car waits, as Ethernet has done since the 1970s. All of this is true, but it stops at the company boundary.
+          A Waymo, a Tesla and a Zoox at the same intersection share no software, no communication channel and no training data about each other.</p>
+
+        <h2>What Shall We Measure Then?</h2>
+        I think we should revisit what we measure. Crash rates are important, but they are not the whole story. For a society that 
+        self driving cars and robotaxis have a significant share of traffic, we should also measure:
+        <ul>
+          <li><strong>Gridlock, not just crashes:</strong> how often a car is stuck for more than a minute or blocks an intersection.</li>
+          <li><strong>Robotaxi-vs-robotaxi encounters</strong>, reported separately, including other companies' cars.</li>
+          <li><strong>Fleet-wide events:</strong> how many cars hit the same software gap before it was fixed, and how long the fix took.</li>
+          <li><strong>Tests at high robotaxi share</strong>, where most of the other cars are robotaxis rather than replayed human traffic.</li>
+        </ul>
+
+        <p>Today's numbers say a robotaxi among humans is a careful driver, and I think that is true. 
+          But they cannot say what happens when the humans who wait, who compensate for strange behaviors of a robotaxis, who wave and brake ties are no longer there.</p>
+
+        <p class="post-verdict">Crash rates describe a single robotaxi. Gridlock and shared mistakes belong to the fleet, but our metrics do not measure the fleet, or how its behavior changes the social norms that everyone on the road relies on.</p>
+
+        <p class="post-end">
+          <a href="../blog.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to all posts</a>
+        </p>
+
+      </article>
+
+    </main>
+
+  </div><!-- /.site-body -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Meysam Sadeghi &mdash; Powered by plain HTML &amp; CSS</p>
+  </footer>
+
+</body>
+</html>

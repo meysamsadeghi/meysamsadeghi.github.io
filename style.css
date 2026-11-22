@@ -605,6 +605,11 @@ ul, ol {
   line-height: 1.75;
 }
 
+.post-body p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 .post-body .page-title {
   border-bottom: none;
   padding-bottom: 0;
@@ -657,6 +662,13 @@ ul, ol {
 
 .post-body .post-hero img {
   width: 100%;
+  display: block;
+}
+
+.post-body .post-hero figcaption {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid var(--color-border);
 }
 
 .post-body h3 {
